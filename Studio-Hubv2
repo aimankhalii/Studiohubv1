@@ -1,0 +1,11 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+
+local Window = Library.CreateLib("Studio Hub", "BloodTheme")
+local Tab = Window:NewTab("Scripts")
+local Section = Tab:NewSection("non-hats")
+Section:NewButton("Killbot", "Killbot script", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/aimankhalii/Studiohubv1/main/killbot"))()
+end)
+Section:NewButton("Abyss Eye", "Abyss Eye script", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/aimankhalii/Studiohubv1/main/Abyss%20Eye"))()
+end)
